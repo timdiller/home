@@ -1,0 +1,5 @@
+
+# Setting PATH for EPD-7.0-2
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+export PATH

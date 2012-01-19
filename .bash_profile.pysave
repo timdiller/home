@@ -1,0 +1,26 @@
+
+# Setting PATH for EPD-7.0-2
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+export PATH
+
+MKL_NUM_THREADS=1
+export MKL_NUM_THREADS
+
+#http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
+#PS1="\e[0:34m\W [\#]\$ \e[m"
+
+alias py="ipython --pylab"
+alias ipy="ipython"
+alias ll="ls -Glpsht"
+alias la="ls -Ga"
+alias ls="ls -G"
+# Setting PATH for EPD-7.1-1
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+export PATH
+
+#export QT_API=pyqt
+export QT_API=pyside
+
+source ~/.bashrc
