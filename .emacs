@@ -103,3 +103,15 @@
 (custom-set-variables
  '(load-home-init-file t t))
 (custom-set-faces)
+
+;; set autofill column to 72 for docstrings and 79 for everything else
+;; suggestion from stack overflow:
+;; http://stackoverflow.com/questions/8823924/in-emacs-python-mode-how-do-i-set-a-different-auto-fill-width-for-docstrings-an
+
+;; (defadvice current-fill-column (around handle-docstring activate)
+;;   (flet ((docp (p) (let ((q (get-text-property p 'face))
+;;                          (r 'font-lock-string-face))
+;;                      (or (eq r q) (memq r q)))))
+;;     (if (or (docp (point)) (docp (point-at-bol)) (docp (point-at-eol)))
+;;         (setq ad-return-value 72)
+;;       ad-do-it)))
