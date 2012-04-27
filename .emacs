@@ -3,6 +3,9 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (add-hook 'latex-mode-hook 'turn-on-auto-fill)
 
+(require 'enaml)
+(setq auto-mode-alist (cons '("\\.enaml$" . enaml-mode) auto-mode-alist))
+
 ;; following code block enables use of pep8 and pylint
 ;; invoke them with 'M-x pylint' or 'M-x pep8'
 (require 'tramp)
@@ -54,11 +57,6 @@
 (require 'ipython)
 (setq py-python-command-args '("--pylab"))
 (put 'downcase-region 'disabled nil)
-
-;; add .enaml files to the python auto-mode
-(setq auto-mode-alist (cons '("\\.enaml$" . python-mode) auto-mode-alist))
-
-
 
 ;; Load CEDET.
 ;; See cedet/common/cedet.info for configuration details.
