@@ -15,6 +15,7 @@ alias ipy="ipython"
 alias ll="ls -Glpsht"
 alias la="ls -Ga"
 alias ls="ls -G"
+alias octave="/Applications/Octave.app/Contents/Resources/bin/octave"
 # Setting PATH for EPD-7.1-1
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
@@ -37,3 +38,8 @@ export PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+# Setting PATH for EPD-7.3-1
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+export PATH
