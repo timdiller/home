@@ -6,6 +6,7 @@
 (require 'enaml)
 (setq auto-mode-alist (cons '("\\.enaml$" . enaml-mode) auto-mode-alist))
 
+
 ;; following code block enables use of pep8 and pylint
 ;; invoke them with 'M-x pylint' or 'M-x pep8'
 (require 'tramp)
